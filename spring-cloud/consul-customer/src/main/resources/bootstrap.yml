@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: zb-consul-customer
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      config:
+        enabled: true
