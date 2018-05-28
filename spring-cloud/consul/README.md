@@ -13,3 +13,4 @@
 2. 心跳检测
 3. 客户端负载均衡
 4. `GET`和`POST`带参数请求
+5. consul key/value

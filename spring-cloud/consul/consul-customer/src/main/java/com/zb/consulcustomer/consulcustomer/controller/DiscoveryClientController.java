@@ -53,6 +53,12 @@ public class DiscoveryClientController {
         return restTemplate.postForEntity(url, user, String.class).getBody();
     }
 
+    @RequestMapping(value = "/getConfigFromValue", method = RequestMethod.GET)
+    public String getConfigFromValue() {
+        String url = "http://zb-consul/getConfigFromValue";
+        return restTemplate.getForEntity(url, String.class).getBody();
+    }
+
     @GetMapping("/myHealthCheck")
     public ResponseEntity<String> myCustomCheck() {
         String message = "Testing my healh check function";
