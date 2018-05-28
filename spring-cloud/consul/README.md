@@ -3,7 +3,7 @@
 2. 解压出来放在`/opt/`下，并加入环境变量
 3. `consul agent -dev`启动`consul`服务。
    由于启动后`consul`提供服务发现页面，不需要像`eureka` 那样去设置只管启动就好，会自动发现服务
-# 简介
+# 工程说明
 1. consul-customer 为服务消费者
 2. consul-service 服务
 3. consul-service1 服务1
