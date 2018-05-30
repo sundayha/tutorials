@@ -28,3 +28,4 @@ feign:
 #        min-request-size: 2048
 #      response:
 #        enabled: true
+# 关于 gzip 压缩问题 将在 2.0.0.RELEASE 中解决。https://github.com/spring-cloud/spring-cloud-openfeign/issues/14
