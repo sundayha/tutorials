@@ -1,7 +1,6 @@
 package com.zb.consulcustomer.consulcustomer.controller;
 
 import org.springframework.cloud.netflix.feign.FeignClient;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,7 +10,6 @@ import org.springframework.web.bind.annotation.*;
  * 接口与 service 的 rest 中 API 保持一致就行
  * feign 集成了 ribbon 所以自带客户端负载均衡无需配置
  */
-@Configuration
 @FeignClient(name = "zb-consul", fallback = ServiceRequestFallback.class)
 public interface RestClient {
 
