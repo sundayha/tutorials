@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.zb.consulclient</groupId>
-	<artifactId>consul-service1</artifactId>
+	<artifactId>consul-service1-feign</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>consul-service1</name>
+	<name>consul-service1-feign</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>

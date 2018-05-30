@@ -1,6 +1,6 @@
 spring:
   application:
-    name: zb-consul
+    name: zb-consul-customer
   cloud:
     consul:
       host: localhost

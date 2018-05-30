@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: zb-consul-customer
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        health-check-path: /myHealthCheck
+        health-check-interval: 20s
+        enabled: true
+        instance-id: ${spring.application.name}:${random.value}
+server:
+  port: 8200
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 15000
+        readTimeout: 15000
+        loggerLevel: basic
+  hystrix:
+      enabled: true
+#  compression:
+#      request:
+#        enabled: true
+#        mime-types: text/xml,application/xml,application/json
+#        min-request-size: 2048
+#      response:
+#        enabled: true
